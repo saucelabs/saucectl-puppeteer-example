@@ -14,8 +14,6 @@ jobs:
           version: 19.03.13
       - saucectl/saucectl-run:
           testing-environment: docker
-      - saucectl/saucectl-run:
-          testing-environment: sauce
 
 workflows:
   version: 2
