@@ -17,10 +17,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      # Install saucectl
       - uses: saucelabs/saucectl-run-action@v1
         with:
-          skip-run: true
-
-      - name: Saucectl RUN Docker
-        run: saucectl run --test-env docker --ccy 10
+          testing-environment: docker
+          concurrency: 10
