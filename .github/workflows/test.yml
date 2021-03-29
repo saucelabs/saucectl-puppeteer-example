@@ -11,7 +11,7 @@ env:
   SAUCE_ACCESS_KEY: ${{secrets.SAUCE_ACCESS_KEY}}
 
 jobs:
-  test-puppeteer:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
