@@ -21,19 +21,15 @@ saucectl configure
 
 ## Running The Examples
 
-Simply check out this repo and run the appropriate command below :rocket:
-
-### In Docker
+Simply check out this repo and run the command below :rocket:
 
 ```shell
-saucectl run --test-env docker
+saucectl run
 ```
 
-![docker example](assets/docker_example.gif)
+![run example](assets/run.gif)
 
-### In Sauce Cloud
-
-Puppeteer is currently *not* available in the Sauce Cloud.
+> **NOTE** Puppeteer is currently *not* available in the Sauce Cloud.
 
 ## The Config
 

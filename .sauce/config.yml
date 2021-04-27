@@ -10,6 +10,8 @@ sauce:
       - release team
       - other tag
     build: Release $CI_COMMIT_SHORT_SHA
+defaults:
+  mode: docker
 docker:
   # Affects how test files are transferred to the docker container when using the docker mode (--test-env docker).
   fileTransfer: copy # Choose between mount|copy.
