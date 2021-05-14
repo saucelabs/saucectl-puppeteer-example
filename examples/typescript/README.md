@@ -19,6 +19,12 @@ npm install -g saucectl
 saucectl configure
 ```
 
+## Install npm dependencies
+
+```shell
+npm install
+```
+
 ## Ensure you already have typescript installed
 
 ```shell
