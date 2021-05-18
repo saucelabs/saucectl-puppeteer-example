@@ -1,0 +1,28 @@
+apiVersion: v1alpha
+kind: puppeteer
+sauce:
+  region: us-west-1
+  concurrency: 2 # Controls how many suites are executed at the same time.
+  metadata:
+    name: saucectl puppeteer example
+    tags:
+      - e2e
+      - release team
+      - other tag
+    build: Release $CI_COMMIT_SHORT_SHA
+defaults:
+  mode: docker
+docker:
+  # Affects how test files are transferred to the docker container when using the docker mode (--test-env docker).
+  fileTransfer: copy # Choose between mount|copy.
+# Controls what files are available in the context of a test run (unless explicitly excluded by .sauceignore).
+rootDir: ./
+puppeteer:
+  version: 8.0.0 # See https://docs.saucelabs.com/testrunner-toolkit for a list of supported versions.
+suites:
+  - name: "chrome"
+    testMatch: ["**/*.test.js"] # jest native glob support.
+    browser: "chrome"
+  - name: "firefox"
+    testMatch: ["**/*.test.js"]
+    browser: "firefox"
