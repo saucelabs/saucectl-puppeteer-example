@@ -13,7 +13,6 @@ jobs:
       - setup_remote_docker:
           version: 19.03.13
       - saucectl/saucectl-run:
-          testing-environment: docker
 
 workflows:
   version: 2
