@@ -19,7 +19,6 @@ jobs:
 
       - uses: saucelabs/saucectl-run-action@v1
         with:
-          testing-environment: docker
           concurrency: 10
 
   typescript:
@@ -31,7 +30,6 @@ jobs:
       - name: Install saucectl
         uses: saucelabs/saucectl-run-action@v1
         with:
-          testing-environment: docker
           concurrency: 10
 
       - name: Use Node.js
