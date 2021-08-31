@@ -18,7 +18,7 @@ docker:
 # Controls what files are available in the context of a test run (unless explicitly excluded by .sauceignore).
 rootDir: ./
 puppeteer:
-  version: 9.1.1 # See https://docs.saucelabs.com/testrunner-toolkit for a list of supported versions.
+  version: 10.2.0 # See https://docs.saucelabs.com/testrunner-toolkit for a list of supported versions.
 suites:
   - name: "chrome"
     testMatch: ["**/*.test.js"] # jest native glob support.
