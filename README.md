@@ -5,7 +5,7 @@ Example running saucectl with puppeteer.
 ## For your reference
 
 * [Puppeteer API](https://github.com/puppeteer/puppeteer/blob/v10.2.0/docs/api.md)
-* [Login test example](./tests/more.complext.test.js)
+* [Login test example](./tests/more.complex.test.js)
 
 ## What You'll Need
 
