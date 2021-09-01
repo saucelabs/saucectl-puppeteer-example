@@ -26,9 +26,3 @@ suites:
   - name: "firefox"
     testMatch: ["**/*.test.js"]
     browser: "firefox"
-artifacts:
-  download:
-    when: always
-    match:
-      - junit.xml
-    directory: ./artifacts/
