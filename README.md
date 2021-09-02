@@ -2,6 +2,11 @@
 
 Example running saucectl with puppeteer.
 
+## For your reference
+
+* [Puppeteer API](https://github.com/puppeteer/puppeteer/blob/v10.2.0/docs/api.md)
+* [Login test example](./tests/more.complex.test.js)
+
 ## What You'll Need
 
 The steps below illustrate one of the quickest ways to get set up. If you'd like a more in-depth guide, please check out
