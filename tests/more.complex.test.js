@@ -1,3 +1,6 @@
+/*
+ * @group group2
+ */
 describe('saucectl larger tests', () => {
 	test('should login', async () => {
 		const page = await browser.newPage();
