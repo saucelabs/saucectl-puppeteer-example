@@ -4,7 +4,6 @@ sauce:
   region: us-west-1
   concurrency: 100 # Controls how many suites are executed at the same time.
   metadata:
-    name: saucectl puppeteer example
     tags:
       - e2e
       - release team
@@ -18,7 +17,7 @@ docker:
 # Controls what files are available in the context of a test run (unless explicitly excluded by .sauceignore).
 rootDir: ./
 puppeteer:
-  version: 10.2.0 # See https://docs.saucelabs.com/testrunner-toolkit for a list of supported versions.
+  version: 13.1.3 # See https://docs.saucelabs.com/testrunner-toolkit for a list of supported versions.
 suites:
   - name: "chrome"
     testMatch: ["**/*.test.js"] # jest native glob support.
