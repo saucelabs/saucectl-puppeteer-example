@@ -13,12 +13,13 @@ sauce:
 defaults:
   mode: docker
 docker:
+  image: pupp
   # Affects how test files are transferred to the docker container when using the docker mode (--test-env docker).
   fileTransfer: copy # Choose between mount|copy.
 # Controls what files are available in the context of a test run (unless explicitly excluded by .sauceignore).
 rootDir: ./
 puppeteer:
-  version: 13.1.3 # See https://docs.saucelabs.com/dev/cli/saucectl/#supported-frameworks-and-browsers for a list of supported versions.
+  version: 14.2.0 # See https://docs.saucelabs.com/dev/cli/saucectl/#supported-frameworks-and-browsers for a list of supported versions.
 suites:
   - name: "chrome"
     testMatch: ["**/*.test.js"] # jest native glob support.
